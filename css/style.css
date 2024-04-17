@@ -1,0 +1,151 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap');
+
+:root{
+    --maincoler:#ffc527
+}
+
+body{
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+    text-align: right;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    padding: 80px 0;
+}
+
+.section_title{
+    position: relative;
+    display: inline-block;
+}
+.section_title:after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    width: 120px;
+    height: 5px;
+    background-color:var(--maincoler) ;
+
+}
+
+/* start nav */
+.navbar{
+box-shadow: 1px 2px 5px #ebebeb;
+}
+.navbar li {
+    margin-left: 20px;
+}
+.navbar .navbar-nav  .active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var( --maincoler);
+}
+
+/* sec home */
+
+.home{
+    height: 500px;
+    background-image:url(../img/slide-bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1px;
+}
+
+.home-item{
+    width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+.home-item h2{
+    color: #fff;
+    font-size: 45px;
+
+}
+.home-item p{
+    color: #fff;
+    font-size: 20px;  
+}
+
+@media(max-width:768px){
+    home-item{
+        width: 100%;
+    }
+  
+}
+/*  */
+.about_item p{
+    margin: 50px 0;
+}
+.about_item button{
+    margin-bottom: 15px;
+}
+
+/*  */
+.news_left img {
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+
+/*  */
+.subscribe{
+    height: 450px;
+    background-image:url(../img/subscribe-our-newsletter-bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 1px;
+    position: relative;
+    color: #fff;
+}
+.subscribe_item{
+    width: 50%;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.subscribe h2{
+    font-size: 40px;
+}
+@media(max-width:768px){
+    .subscribe_item .form{
+        flex-direction: column;
+    }
+    .subscribe_item .form input,  .subscribe_item .form button{
+        width: 100%;
+    }
+}
+
+/*  */
+footer{
+    background-color: #071c33;
+}
+footer h3 {
+    background: #fff;
+    color: #222;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;}
+    footer p,h4{
+        color: #fff;
+    }
+
+    .footer_left{
+        font-size: 12px;
+    }
+    .footer_left img{
+        max-width: 90px;
+    }
+    a:hover i{
+        background-color: var(--maincoler);
+        border-radius: 50%;
+    }
